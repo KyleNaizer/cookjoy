@@ -1,1 +1,9 @@
-<h1>Welcome to CookJoy, a place for people who love to cook!</h1>
+<% @recipes.each do |recipe| %>
+  <div> 
+    <h1><%= recipe.name %></h1><br />
+    <p><%= recipe.instructions %></p><br />
+  </div>
+
+<hr />
+<% end %>
+

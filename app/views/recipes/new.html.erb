@@ -1,8 +1,10 @@
-<h1> Enter your recipe </h1>
-
-<%= simple_form_for @recipe do |f| %> 
-  <%= f.input :name %>
-  <%= f.input :instructions %>
-  <br />
-  <%= f.submit 'Create', :class => 'btn btn-primary' %>
-<% end %>
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+  <h1> Enter your recipe </h1>
+  <%= simple_form_for @recipe do |f| %> 
+    <%= f.input :name %>
+    <%= f.input :instructions %>
+    <br />
+    <%= f.submit 'Create', :class => 'btn btn-primary' %>
+    
+  <% end %>
+</div>  
